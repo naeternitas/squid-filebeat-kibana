@@ -1,8 +1,12 @@
 filebeat.inputs:
-- type: log
-  enabled: false
-  paths:
-    - /var/log/*.log
+- type: tcp
+  max_message_size: 10MiB
+  host: "localhost:9000"
+#filebeat.inputs:
+#- type: log
+#  enabled: false
+#  paths:
+#    - /var/log/*.log
 
 
 
