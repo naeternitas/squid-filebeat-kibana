@@ -10,7 +10,3 @@
     # Input configuration (advanced). Any input configuration option
     # can be added under this section.
     #input:
-filebeat.inputs:
-- type: tcp
-  max_message_size: 10MiB
-  host: "localhost:9000"
